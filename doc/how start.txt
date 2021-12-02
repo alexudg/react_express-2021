@@ -1,0 +1,19 @@
+* previous installed node and npm
+
+* run command...
+  > create_react_app <nombre_aplicacion>
+
+* after use next commands...
+  - >npm start .- start develop server
+  - >npm run build .- create static files for production
+  - >npm test .- start test
+  - >npm run eject .- remove this tool and copies dependencies, files and script into app directory. (you cant go back)
+
+
+* build project
+  > npm run build
+
+  will create folder build with all files for deployment
+
+* upload to Heroku
+    
