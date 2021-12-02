@@ -1,0 +1,17 @@
+@url = http://localhost:4000
+
+### GET 
+GET {{url}}/users
+
+### GET 
+GET {{url}}/users/10
+
+### POST
+POST {{url}}/users
+
+### PUT
+PUT {{url}}/users
+
+
+### DELETE
+DELETE {{url}}/users

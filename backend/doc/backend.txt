@@ -1,0 +1,45 @@
+* requeriments...
+  - node
+  - npm
+
+* type next command for create package.json ...
+  > npm init -y
+
+* install next packages 'dependencies' ....
+  - express .- launch server
+  - morgan .- request methods (GET, POST, PUT, DELETE)
+  - cors .- communication two servers
+
+    > npm i express morgan cors  
+
+* install next packages only for 'development' ...
+  - nodemon
+    > npm i nodemon -D (--save-dev)
+
+* file index.js add line at section 'scripts' at file 'package.json'...
+  ...
+  "scripts" {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "node src/index.js",
+  }
+  ...
+
+* now run with...
+  > npm run app
+  
+  verify on navigator localhost:4000
+
+* for use package nodemon add next line at section 'scripts' of 'pakcage.json'...
+
+  ...
+  "scripts" {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "node src/index.js",
+    "dev": "nodemon src/index.js", <--------- this
+  }
+  ...
+  
+  now use > npm run dev
+
+* install package for sqlite3...
+  > npm i|install sqlite3  
