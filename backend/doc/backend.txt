@@ -43,3 +43,13 @@
 
 * install package for sqlite3...
   > npm i|install sqlite3  
+
+* install dotenv for variables enviroment in file '.env'...
+  > npm install|i dotenv
+
+  use...
+  const { config } = require('dotenv');
+  
+  config();
+
+  console.log(process.env.<variable_name>)

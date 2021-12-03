@@ -1,6 +1,10 @@
 const sqlite3 = require('sqlite3').verbose();
+require('../config');
+
+//console.log(`env.DB_PATH: ${process.env.DB_PATH}`)
+
 let db = new sqlite3.Database(
-    './src/db/database.db', 
+    process.env.DB_PATH, // file '.env' package 'dotenv'
     (err) => {
         if (err) {
             console.log(err.message);
@@ -9,24 +13,10 @@ let db = new sqlite3.Database(
     }
 );
 
-module.exports = db;
-
-/*
-db.serialize(() => {
-    db.each(`SELECT PlaylistId as id,
-                    Name as name
-             FROM playlists`, (err, row) => {
-      if (err) {
-        console.error(err.message);
-      }
-      console.log(row.id + "\t" + row.name);
-    });
-  });
-  
-  db.close((err) => {
-    if (err) {
-      console.error(err.message);
-    }
-    console.log('Close the database connection.');
-  });
-*/
+module.exports = db; 
+  // db.close((err) => {
+  //   if (err) {
+  //     console.error(err.message);
+  //   }
+  //   console.log('Close the database connection.');
+  // });

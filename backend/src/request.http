@@ -4,14 +4,31 @@
 GET {{url}}/users
 
 ### GET 
-GET {{url}}/users/10
+GET {{url}}/users/3
 
 ### POST
 POST {{url}}/users
+Content-Type: application/json
+
+{
+    "userName": "peter",
+    "email": "peter@mail.com",
+    "age": 55,
+    "height": 1.63
+}
 
 ### PUT
 PUT {{url}}/users
+Content-Type: application/json
 
+{
+    "id": 6,
+    "userName": "pater",
+    "email": "pater@mail.com",
+    "age": 45,
+    "height": 1.63
+}
 
 ### DELETE
-DELETE {{url}}/users
+DELETE {{url}}/users/6
+Content-Type: application/json
