@@ -1,13 +1,37 @@
 * previous installed node and npm
 
 * run command...
-  > create_react_app <nombre_aplicacion>
+  >npx create_react_app <nombre_aplicacion>
 
 * after use next commands...
   - >npm start .- start develop server
   - >npm run build .- create static files for production
   - >npm test .- start test
   - >npm run eject .- remove this tool and copies dependencies, files and script into app directory. (you cant go back)
+
+ 
+* clean all of file 'src/App.js'
+
+* install package for router...
+  > npm i react-router-dom
+
+
+* install UI Material
+  > npm install|i @mui/material @emotion/react @emotion/styled
+
+* add link roboto fonts on public/index.html
+<!-- Roboto font -->
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+/>
+
+<!-- Font icons -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+* install SVG Icons
+  > npm install @mui/icons-material
+
 
 
 * build project

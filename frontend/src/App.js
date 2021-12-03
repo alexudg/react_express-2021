@@ -1,26 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import UserForm from './components/UserForm';
+import UsersList from './components/UsersList';
+import { Container } from '@mui/material'; // package @ui/material
 
-function App() {
-  const name = 'variable constante';
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and {name}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    return (
+        <BrowserRouter>
+            <Container>
+                <Routes>
+                    <Route path='/' element={<UsersList />} />
+                    <Route path='/user/insert' element={<UserForm />} />
+                    <Route path='/user/update' element={<UserForm />} />
+                    {/* comentario */}
+                </Routes>
+            </Container>
+
+        </BrowserRouter>
+    )
 }
-
-export default App;
