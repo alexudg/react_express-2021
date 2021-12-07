@@ -32,12 +32,16 @@
 * install SVG Icons
   > npm install @mui/icons-material
 
+* run project on port 3000...
+  > npm start
 
+
+  
 
 * build project
   > npm run build
 
-  will create folder build with all files for deployment
+  will create folder 'build' with all files for deployment
 
 * upload to Heroku
     
